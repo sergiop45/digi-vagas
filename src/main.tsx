@@ -1,17 +1,20 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
 import { BrowserRouter } from 'react-router-dom';
 import AppRoutes from './routes';
+import MenuLateral from './shared/components/menuLateral';
+import { AppThemeProvider } from './shared/contexts/ThemeContext';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  
-  <BrowserRouter>
-    
-    <App />
+  <AppThemeProvider>
+    <BrowserRouter>
+
+    <MenuLateral>
     <AppRoutes/>
+    </MenuLateral>
     
-  </BrowserRouter>
+    </BrowserRouter>
+  </AppThemeProvider>  
+  
+    
   
 )

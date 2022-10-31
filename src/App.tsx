@@ -1,12 +1,13 @@
 
-import './App.css'
+import { Button } from '@mui/material'
+
 
 function App() {
   
 
   return (
-    <div className="App">
-      <h2>CRUD de vagas</h2>
+    <div >
+        <Button variant='contained' color='primary'>teste</Button>
     </div>
   )
 }
